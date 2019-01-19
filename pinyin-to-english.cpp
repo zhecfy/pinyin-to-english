@@ -103,7 +103,7 @@ void printchoice(choice res)
 {
 	for (int i = 1;i <= res.cnt;i++)
 		cout << res.select[i] << " ";
-	cout << "\tselected " << res.cnt << " words,";
+	cout << "\tselected " << res.cnt << " word" << (res.cnt == 1 ? "" : "s") << ",";
 	if (res.lefttot == 0)
 	{
 		cout << " LEFT LETTER = 0!" << endl;
